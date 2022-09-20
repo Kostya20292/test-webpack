@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BP-Mobile Test</title>
+        <link rel="stylesheet" href="../dist/style.css" />
+        <script src="../dist/index.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__wrapper">
+                <a href="#" class="header__close">
+                    <img
+                        src="./img/close.svg"
+                        alt="Close button"
+                        class="header__close"
+                    />
+                </a>
+                <a href="#" class="header__restore" data-content="Restore"
+                    >Restore</a
+                >
+            </div>
+        </header>
+        <main class="main">
+            <section class="content">
+                <h1
+                    class="content__title"
+                    data-content="Unlimited Access<br>to All Features"
+                >
+                    Unlimited Access to All Features
+                </h1>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <img
+                            src="./img/unlimitedDocs.svg"
+                            alt="Unlimited Docs Icon"
+                            class="content__item-icon"
+                        />
+                        <span data-content="Unlimited documents"
+                            >Unlimited documents</span
+                        >
+                    </li>
+                    <li class="content__item">
+                        <img
+                            src="./img/export.svg"
+                            alt="Export Icon"
+                            class="content__item-icon"
+                        />
+                        <span data-content="Count mode">Export to clouds</span>
+                    </li>
+                    <li class="content__item">
+                        <img
+                            src="./img/noAds.svg"
+                            alt="No Ads Icon"
+                            class="content__item-icon"
+                        />
+                        <span data-content="Text recognition (OCR)"
+                            >Text recognition (OCR)</span
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section class="cards">
+                <div class="cards__wrapper">
+                    <div class="cards__item" data-link="apple">
+                        <h3 class="cards__item-title" data-content="Monthly">
+                            Monthly
+                        </h3>
+                        <p
+                            class="cards__item-price"
+                            data-content="<strong>{{price}}</strong><br>per month"
+                            data-cost="$9.99"
+                        >
+                            <strong>$9.99</strong><br />per month
+                        </p>
+                        <p class="cards__item-stock" data-content="3 DAYS FREE">
+                            3 DAYS FREE!
+                        </p>
+                        <p
+                            class="cards__item-cost"
+                            data-content="{{price}}/month"
+                            data-cost="$9.99"
+                        >
+                            $9.99 month
+                        </p>
+                    </div>
+                    <div
+                        class="cards__item cards__item-hide cards__item-sale"
+                        data-link="google"
+                    >
+                        <span class="cards__sale" data-content="-83%"
+                            >-83%</span
+                        >
+                        <h3 class="cards__item-title" data-content="Annually">
+                            Annually
+                        </h3>
+                        <p
+                            class="cards__item-price"
+                            data-content="<strong>{{price}}</strong><br>per year"
+                            data-cost="$19.99"
+                        >
+                            <strong>$19.99</strong><br />per year
+                        </p>
+                        <p
+                            class="cards__item-stock"
+                            data-content="MOST POPULAR"
+                        >
+                            MOST POPULAR
+                        </p>
+                        <p
+                            class="cards__item-cost"
+                            data-content="{{price}}/month"
+                            data-cost="$1.66"
+                        >
+                            $1.66 month
+                        </p>
+                    </div>
+                </div>
+                <a
+                    href="#"
+                    target="_blank"
+                    class="cards__button"
+                    data-content="Continue"
+                    >Continue
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <p
+                class="footer__rewable"
+                data-content="Auto-renewable. Cancel anytime."
+            >
+                Auto-rewable. Cancel anytime
+            </p>
+            <div class="footer__wrapper">
+                <span class="footer__terms" data-content="Terms of Use"
+                    >Terms of Use</span
+                >
+                <span class="footer__policy" data-content="Privacy Policy"
+                    >Privacy Policy</span
+                >
+            </div>
+            <img src="./img/home.svg" alt="Home Icon" class="footer__home" />
+        </footer>
+    </body>
+</html>

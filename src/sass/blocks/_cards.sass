@@ -1,0 +1,129 @@
+.cards
+    &__wrapper
+        display: flex
+        align-items: center
+        max-width: 297px
+        margin: 0 auto 16px
+    &__sale
+        position: absolute
+        top: -2px
+        right: 2px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 38px
+        height: 38px
+        +sf-heavy
+        font-size: 12px
+        line-height: 14px
+        text-align: center
+        color: $text-color
+        background: $sale-color
+        border-radius: 50%
+    &__item
+        width: 151px
+        background: url('../img/shape-0.svg') no-repeat
+        &:hover
+            cursor: pointer
+        &:first-child
+            margin-right: 9px
+        &-sale
+            position: relative
+            background: url('../img/shape-1.svg') no-repeat
+        &-title
+            padding: 26px 0 22px
+            margin: 0
+            +sf-bold
+            font-size: 19px
+            line-height: 22px
+            text-align: center
+            color: $text-color
+        &-price
+            margin: 0 0 15px
+            +sf-regular
+            font-size: 16px
+            line-height: 15px
+            text-align: center
+            color: $text-color
+            & strong
+                margin: 0 0 3px
+                +sf-bold
+                text-align: center
+                font-size: 24px
+                line-height: 15px
+                color: $text-color
+        &-stock
+            background: $stock-color
+            margin: 0 0 14px
+            +sf-heavy
+            font-size: 15px
+            line-height: 18px
+            text-align: center
+            color: $text-color
+        &-cost
+            margin: 0
+            padding: 0 0 14px
+            +sf-regular
+            font-size: 13px
+            line-height: 15px
+            text-align: center
+            color: $text-color
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 280px
+        height: 54px
+        margin: 0 auto 14px
+        font-size: 17px
+        line-height: 17px
+        text-align: center
+        text-decoration: none
+        color: $text-color
+        +sf-bold
+        background: $button-color
+        border-radius: 30px
+        cursor: pointer
+
+.cards__item-hide
+    width: 131px
+    background: url('../img/shape-1-hide.svg') no-repeat
+    opacity: 0.49
+    & .cards__sale
+        right: -4px
+        top: 0px
+        width: 30px
+        height: 30px
+        font-size: 10px
+        line-height: 12px
+    & .cards__item-title
+        font-size: 17px
+        line-height: 20px
+        padding-bottom: 16px
+    & .cards__item-price
+        font-size: 12px
+        line-height: 14px
+        & strong
+            font-size: 22px
+            line-height: 15px
+    & .cards__item-stock
+        font-size: 14px
+        line-height: 16px
+    & .cards__item-cost
+        font-size: 12px
+        line-height: 14px
+
+.card--fr
+    & .cards__item-stock
+        font-size: 13px
+    & .cards__item-title
+        width: 104px
+        margin: 0 auto
+        padding-bottom: 6px
+    & .cards__item-cost
+        line-height: 19px
+
+.card--ru
+    & .cards__item-stock
+        font-size: 12px
+
